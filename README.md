@@ -19,6 +19,7 @@ I made a stupid mistake while programming, so you have to have the exact same ha
 	}
 
 All spells must have a applyEffectToTarget() method as well. It looks like this:
+
 	@Override
 	public void applyEffectToTarget(Player caster, LivingEntity target) {
 		// Your code here.
