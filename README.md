@@ -1,6 +1,11 @@
 # ExampleNordicRPGAddons
 Example addons for NordicRPG spells.
 
+
+# TUTORIAL
+
+Make sure you add NordicRPG as an external JAR in your build path (sorry, no Gradle or Maven).
+
 When programming new spells, make sure that if they are meant to target the caster (e.g. a healing spell), it extends SelfTargetShout.
 
 If it is meant to target the entity they are looking at (e.g. a damage spell), it should extend TargetShout.
@@ -15,6 +20,6 @@ I made a stupid mistake while programming, so you have to have the exact same ha
   
 Make sure you register each Spell you make in your onEnable() like this:
 
-		NordicRPG.getSpellManager().addSpell(new CustomSpell(String spellName, String permissionToUseThisSpell));
+	NordicRPG.getSpellManager().addSpell(new CustomSpell(String spellName, String permissionToUseThisSpell));
     
 Lastly, make sure you add NordicRPG as a depend in your plugin.yml.
