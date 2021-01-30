@@ -17,7 +17,15 @@ I made a stupid mistake while programming, so you have to have the exact same ha
 	public boolean hasPermission(Player caster) {
 		return caster.hasPermission(getPermission());
 	}
-  
+
+All spells must have a applyEffectToTarget() method as well. It looks like this:
+	@Override
+	public void applyEffectToTarget(Player caster, LivingEntity target) {
+		// Your code here.
+		// If this is a SelfTargetSpell, caster and target are the same player.
+		// If this is a TargetSpell, caster is the player doing the spell and target is the target of the spell.
+	}
+
 Make sure you register each Spell you make in your onEnable() like this:
 
 	NordicRPG.getSpellManager().addSpell(new CustomSpell(String spellName, String permissionToUseThisSpell));
