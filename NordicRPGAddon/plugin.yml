@@ -1,4 +1,4 @@
-name: SelfPoisonPack
+name: ExampleSpellPack
 depend: [NordicRPG]
 version: 1.0.0
 author: Dartanman
