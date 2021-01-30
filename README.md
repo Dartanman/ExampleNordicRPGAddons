@@ -25,6 +25,8 @@ All spells must have a applyEffectToTarget() method as well. It looks like this:
 		// Your code here.
 		// If this is a SelfTargetSpell, caster and target are the same player.
 		// If this is a TargetSpell, caster is the player doing the spell and target is the target of the spell.
+		// IT IS ALSO IMPORTANT TO SET THE COOLDOWN, OTHERWISE THEY CAN SPAM THE SPELL
+		super.setCooldown(Player caster, int seconds);
 	}
 
 Make sure you register each Spell you make in your onEnable() like this:
