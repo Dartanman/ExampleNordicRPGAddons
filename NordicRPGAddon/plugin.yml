@@ -1,0 +1,5 @@
+name: SelfPoisonPack
+depend: [NordicRPG]
+version: 1.0.0
+author: Dartanman
+main: main.dartanman.examplespelladdons.Main
