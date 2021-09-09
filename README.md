@@ -6,9 +6,9 @@ Example addons for NordicRPG spells.
 
 Make sure you add NordicRPG as an external JAR in your build path (sorry, no Gradle or Maven).
 
-When programming new spells, make sure that if they are meant to target the caster (e.g. a healing spell), it extends SelfTargetShout.
+When programming new spells, make sure that if they are meant to target the caster (e.g. a healing spell), it extends SelfTargetSpell.
 
-If it is meant to target the entity they are looking at (e.g. a damage spell), it should extend TargetShout.
+If it is meant to target the entity they are looking at (e.g. a damage spell), it should extend TargetSpell.
 MAKE SURE TO DO A NULL CHECK ON THE TARGET, otherwise, you'll get errors.
 
 I made a stupid mistake while programming, so you have to have the exact same hasPermission() method in each Spell. It looks like this:
